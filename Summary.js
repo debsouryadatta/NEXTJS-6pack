@@ -20,3 +20,14 @@
 // • Server Component
 // • Fetch API Extended
 // • Turbo Pack
+
+
+
+
+
+
+// * #2 Next.js Setup: Installation and Folder Structure Demystified | Mastering Next Js
+// * 1. First of all we installed the next app without ts, tailwind, app directory, src directory.
+// * 2. Then we converted the whole application to app directory by altering the next.config.js file and making an app directory which consists of page.jsx
+// * 3. Since we are using app directory, we have to delete the main files i.e. _app.js,index.js and make the page.jsx as the main file of the application
+// * 4. Since page.jsx is a server component so we can't use react hooks there.
