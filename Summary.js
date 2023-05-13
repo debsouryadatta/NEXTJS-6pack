@@ -67,5 +67,20 @@
 // * 6. For importing client components on server components, normal technique but for importing server components on client components we need a separate technique or else it shows error
 // * 7. The separate technique is implemented on Contact folder, have a look for better understanding
 // * 8. We can send props from server components to client components
-// * 9. Some extra components like Network Boundary, Poisoning, process.env only inside server component,server-only & client-only packages
+// * 9. Some extra concepts like Network Boundary, Poisoning, process.env only inside server component,server-only & client-only packages
 // * 10. If we want to use packages which requires the use of hooks or other stuffs, we can import the package in a client component and use this component in the server component
+
+
+
+
+
+
+// * #6 Next.js: A Deep Dive into Backend and API Routing | Mastering Next Js
+// * 1. For Rest Api in Next.js, we use pages folder, we will get the json if we go to the route - /api/hello/ 
+// * 2. The files acts as controllers(analogy with mern)
+// * 3. Creating a list of products and sending it to frontend
+// * 4. Connecting MongoDB to our application, connectDb from database.js to all.js
+// * 5. Creating mongoose model/schema in model folder
+// * 6. Create Operation in mongoDB with -> await Product.create({name,price,category})
+// * 6. Read Operation in mongoDB with -> const products = await Product.find({})
+// * 6. Handling Post req in Nextjs backend server
