@@ -62,3 +62,10 @@
 // * 1. Server component v/s client component - which one to use when
 // * 2. Client component console logs on browser whereas server component console logs on the terminal
 // * 3. Giving some style to header.jsx
+// * 4. We can also make even smaller components like searchbar to client components, so we shifted the searchbar from header.jsx to searchbar.jsx
+// * 5. Try to make server components as much possible
+// * 6. For importing client components on server components, normal technique but for importing server components on client components we need a separate technique or else it shows error
+// * 7. The separate technique is implemented on Contact folder, have a look for better understanding
+// * 8. We can send props from server components to client components
+// * 9. Some extra components like Network Boundary, Poisoning, process.env only inside server component,server-only & client-only packages
+// * 10. If we want to use packages which requires the use of hooks or other stuffs, we can import the package in a client component and use this component in the server component
