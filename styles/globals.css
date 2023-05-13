@@ -103,3 +103,11 @@ a {
 *{
   box-sizing: border-box;
 }
+
+nav{
+  padding: 0.5rem;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

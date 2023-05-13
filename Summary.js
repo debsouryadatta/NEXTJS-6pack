@@ -31,3 +31,34 @@
 // * 2. Then we converted the whole application to app directory by altering the next.config.js file and making an app directory which consists of page.jsx
 // * 3. Since we are using app directory, we have to delete the main files i.e. _app.js,index.js and make the page.jsx as the main file of the application
 // * 4. Since page.jsx is a server component so we can't use react hooks there.
+
+
+
+
+
+// * #3 Next.js 13 File Conventions & Reserved files | Mastering Next Js
+// * 1. By default all components are server based components, and the main file should be page.jsx
+// * 2. Its actually layout.js is the main file and page.jsx is the main component, layout.js takes page.jsx as its children
+// * 3. loading.jsx is shown when the application is loading
+// * 4. error.js is shown if there is any type of error -> Error components must be Client components - since hooks are used in it
+// * 5. not-found.js is shown is when the requested route is not found
+
+
+
+
+
+// * #4 Next.js Routing: Linking and Navigating | Mastering Next Js
+// * 1. By default routing with folders -> /about page in about folder
+// * 2. Hierarchy is followed until there are separate headers, separate layouts and separate stuffs for the other folders
+// * 3. For dynamic routes, the value of the params can be get using square brackets
+// * 4. Creating Header component and importing it to layout.js
+// * 5. Using Link for navigation but in more simpler way
+
+
+
+
+
+// * #5 Next.js Rendering: Right Components for Faster Load and Seamless Experiences | Mastering Next Js
+// * 1. Server component v/s client component - which one to use when
+// * 2. Client component console logs on browser whereas server component console logs on the terminal
+// * 3. Giving some style to header.jsx
