@@ -98,3 +98,19 @@
 // * 2. In SSG - We request data for one time, then the data gets stored in the cache which we can get by using the CDN - thats will be super fast
 // * 3. In SSR - We request data to the server everytime
 // * 4. In ISR - Between SSG & SSR, 2types -> 1)Revalidates the data at a specific time interval(Background), 2)Revalidates the data whenever there is an update(On-demand)
+// * 5. Creating a new next app with app router inbuild & changing some properties in next.config.js
+// * 6. Creating a function in features.js to fetch an api of users, and the function is used in pages.jsx
+// * 7. By default Next uses SSG, to change this into SSR - we need to set cache: "no-cache" during fetching
+// * 8. Using Link & dynamic routing for showing the user details in the folder - user/[id]
+// * 9. Once the data comes in, it gets stored in the cache and next time the data is fetched from the cache
+// * 10. Showing how tha data gets loaded when we just hover to that link, feature of nextjs - then it just shows the cached data -> SSG
+// * 12. Mutation with router.refresh method to show the refreshed data
+// * 13. Making Posts.jsx and a new func in features.js to show the streaming and suspence concept i.e. the data which are already loaded are shown first then the leftover data is shown gradually.
+
+
+// * 14. Changing metadeta(title) of any specific page
+// * 15. SSR, SSG , ISR works only during get requests
+// * 16. By default SSG is used by the Nextjs in static routes,so the all posts page loads superfast
+// * 17. But in dynamic routes by default SSR is used, still we can change them to SSG by mentioning them in generateStaticParams function -> As shown in generateStaticParams
+// * 18. So the first 4 renders with SSG(very fast) and the leftover renders with SSR
+// * 19. Finally not-found was shown but we didn't implement that since its not required
