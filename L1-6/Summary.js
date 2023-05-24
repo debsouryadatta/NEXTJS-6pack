@@ -42,7 +42,7 @@
 // * 2. Its actually layout.js is the main file and page.jsx is the main component, layout.js takes page.jsx as its children
 // * 3. loading.jsx is shown when the application is loading
 // * 4. error.js is shown if there is any type of error -> Error components must be Client components - since hooks are used in it
-// * 5. not-found.js is shown is when the requested route is not found
+// * 5. not-found.jsx is shown is when the requested route is not found
 
 
 
@@ -89,12 +89,3 @@
 // * 6. Handling Post req in Nextjs backend server
 
 
-
-
-
-
-// * #7 Next.js: Cutting-Edge Data Fetching Techniques | Mastering Next Js
-// * 1. Data fetching -> SSG - Caching & SSR - Dynamic data fetching
-// * 2. In SSG - We request data for one time, then the data gets stored in the cache which we can get by using the CDN - thats will be super fast
-// * 3. In SSR - We request data to the server everytime
-// * 4. In ISR - Between SSG & SSR, 2types -> 1)Revalidates the data at a specific time interval(Background), 2)Revalidates the data whenever there is an update(On-demand)
