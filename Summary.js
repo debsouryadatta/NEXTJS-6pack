@@ -42,7 +42,7 @@
 // * 2. Its actually layout.js is the main file and page.jsx is the main component, layout.js takes page.jsx as its children
 // * 3. loading.jsx is shown when the application is loading
 // * 4. error.js is shown if there is any type of error -> Error components must be Client components - since hooks are used in it
-// * 5. not-found.js is shown is when the requested route is not found
+// * 5. not-found.js is shown when the requested route is not found
 
 
 
@@ -68,10 +68,12 @@
 // * 4. We can also make even smaller components like searchbar to client components, so we shifted the searchbar from header.jsx to searchbar.jsx
 // * 5. Try to make server components as much possible
 // * 6. For importing client components on server components, normal technique but for importing server components on client components we need a separate technique or else it shows error
-// * 7. The separate technique is implemented on Contact folder, have a look for better understanding
+// * 7. The separate technique is implemented on Contact folder, have a look for better understanding(server component should be passed as a children to the client component)
 // * 8. We can send props from server components to client components
 // * 9. Some extra concepts like Network Boundary, Poisoning, process.env only inside server component,server-only & client-only packages
 // * 10. If we want to use packages which requires the use of hooks or other stuffs, we can import the package in a client component and use this component in the server component
+// * 11. We have to use client component when using -> hooks, forms, event listeners, api usuage, using local storage
+
 
 
 
@@ -85,8 +87,8 @@
 // * 4. Connecting MongoDB to our application, connectDb from database.js to all.js
 // * 5. Creating mongoose model/schema in model folder
 // * 6. Create Operation in mongoDB with -> await Product.create({name,price,category})
-// * 6. Read Operation in mongoDB with -> const products = await Product.find({})
-// * 6. Handling Post req in Nextjs backend server
+// * 7. Read Operation in mongoDB with -> const products = await Product.find({})
+// * 8. Handling Post req in Nextjs backend server
 
 
 
@@ -103,7 +105,7 @@
 // * 7. By default Next uses SSG, to change this into SSR - we need to set cache: "no-cache" during fetching
 // * 8. Using Link & dynamic routing for showing the user details in the folder - user/[id]
 // * 9. Once the data comes in, it gets stored in the cache and next time the data is fetched from the cache
-// * 10. Showing how tha data gets loaded when we just hover to that link, feature of nextjs - then it just shows the cached data -> SSG
+// * 10. Showing how the data gets loaded when we just hover to that link, feature of nextjs - then it just shows the cached data -> SSG
 // * 12. Mutation with router.refresh method to show the refreshed data
 // * 13. Making Posts.jsx and a new func in features.js to show the streaming and suspence concept i.e. the data which are already loaded are shown first then the leftover data is shown gradually.
 
@@ -113,4 +115,4 @@
 // * 16. By default SSG is used by the Nextjs in static routes,so the all posts page loads superfast
 // * 17. But in dynamic routes by default SSR is used, still we can change them to SSG by mentioning them in generateStaticParams function -> As shown in generateStaticParams
 // * 18. So the first 4 renders with SSG(very fast) and the leftover renders with SSR
-// * 19. Finally not-found was shown but we didn't implement that since its not required
+// * 19. Finally not-found was shown in the tutorial but we didn't implement that since its not required
